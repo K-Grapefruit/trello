@@ -63,7 +63,7 @@ function App() {
       });
     }
   };
-  console.log(toDos);
+  localStorage.setItem("todo", JSON.stringify(toDos));
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <Wrapper>
