@@ -11,7 +11,6 @@ interface IToDoState {
 
 const recentodo = localStorage.getItem("todo");
 const a = JSON.parse(recentodo as any);
-console.log(a);
 
 export const toDoState = atom<IToDoState>({
   key: "todo",
